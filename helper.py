@@ -183,22 +183,24 @@ def create_coins(board):
     
     return coins
 
-def remove(board):
+
+def remove_coins(board):
     special_coin_pos=[]
-    special_coins_pos.pop((1,1))
-    special_coins_pos.pop((1,13))
-    special_coins_pos.pop((14,1))
-    special_coins_pos.pop((14,13))
+
+    special_coins_pos.remove((1,1))
+    special_coins_pos.remove((1,13))
+    special_coins_pos.remove((14,1))
+    special_coins_pos.remove((14,13))
     return special_coins_pos
 
-def remove(board):
+def remove_coins(board):
     center_pos = []
-    center_pos.pop((5, 7))
-    center_pos.pop((6, 7))
-    center_pos.pop((7, 7))
-    center_pos.pop((8, 7))
-    center_pos.pop((9, 7))
-    center_pos.pop((10, 7))
+    center_pos.remove((5, 7))
+    center_pos.remove((6, 7))
+    center_pos.remove((7, 7))
+    center_pos.remove((8, 7))
+    center_pos.remove((9, 7))
+    center_pos.remobe((10, 7))
     return center_pos
    
 
