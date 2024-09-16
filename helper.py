@@ -195,12 +195,9 @@ def remove_coins(board):
 
 def remove_coins(board):
     center_pos = []
-    center_pos.remove((5, 7))
-    center_pos.remove((6, 7))
-    center_pos.remove((7, 7))
-    center_pos.remove((8, 7))
-    center_pos.remove((9, 7))
-    center_pos.remobe((10, 7))
+    center_pos.remove((12, 7))
+    center_pos.remove((13, 7))
+    center_pos.remove((14, 7))
     return center_pos
    
 
