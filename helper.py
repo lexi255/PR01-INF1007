@@ -27,9 +27,9 @@ def create_board():
 def create_coins(board):
     
     coins = []
-    for i in range(len({maze})):
-        for j in range(len(maze[i])):
-            coins.append(maze[i][j],end="0")
+    for i in range(len({create_board})):
+        for j in range(len(create_board[i])):
+            coins.append(create_board[i][j],end="0")
 
     
     if special_coins_pos in coins:
