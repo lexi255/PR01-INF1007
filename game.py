@@ -97,9 +97,7 @@ class Game:
         if event.key==pygame.K_RIGHT:
             if not self.check_collision((1,0)):
                 self.pacman.set_direction((1,0))
-      
-
-
+                
         if event.key == pygame.K_LEFT:
             if not self.check_collision((-1, 0)): 
              self.pacman.set_direction((-1,0))

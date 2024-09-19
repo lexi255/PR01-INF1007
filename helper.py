@@ -24,27 +24,26 @@ def create_board():
 
     return maze
 
-def create_coins(board):
+def create_coins(maze):
     
     coins = []
-    for i in range(len({create_board})):
-        for j in range(len(create_board[i])):
-            coins.append(create_board[i][j],end="0")
+    
+    for y in range(len(maze)):
+        for x in range(len(maze[y])):
+            if maze[y][x] == 0:
+                coins.append((x, y))
 
-    
-    if special_coins_pos in coins:
-        coins.remove(special_coins_pos)
-    
-    if center_pos in coins:
-            coins.remove(center_pos)
-            
+    for position in special_coins_pos, center_pos:
+           if position == maze[y][x]:
+            coins.remove((position))
+
     return coins 
-   
 
-def create_special_coins(board):
+def create_special_coins(board, maze, x, y):
     special_coins=[]
-    if special_coins in special_coins_pos:
-        special_coins.append(special_coins_pos)
+    for position in special_coins_pos:
+         if position == maze[y][x]:
+            special_coins.append(position)
 
     return special_coins
 

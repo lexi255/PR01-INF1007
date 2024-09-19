@@ -41,7 +41,7 @@ class PacMan:
         self.screen.blit(rotated_image, (screen_x, screen_y))
 
     def move(self):
-        if self.direction:
+        
             pass
         
             # TODO: Extraire la direction de déplacement à partir de l'attribut `self.direction`.
