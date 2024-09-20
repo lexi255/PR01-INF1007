@@ -112,8 +112,6 @@ class Game:
             if not self.check_collision((0,-1)):
                 self.pacman.set_direction((0,-1))
         
-    pass
-
 
     def check_collision(self, direction):
         

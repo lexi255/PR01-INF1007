@@ -36,7 +36,8 @@ def create_coins(maze):
            if position in coins:
             coins.remove((position))
 
-    return coins 
+
+    return coins
 
 def create_special_coins(board):
     special_coins=[]
