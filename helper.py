@@ -1,5 +1,5 @@
 special_coins_pos = [(1, 1), (14, 1), (1, 13), (14, 13)]
-center_pos = [(12, 7), (11, 7), (13, 7), (14, 7)]
+
 
 def create_board():
     
@@ -32,7 +32,7 @@ def create_coins(maze):
             if maze[y][x] == 0:
                 coins.append((x, y))
 
-    for position in special_coins_pos + center_pos:
+    for position in special_coins_pos:
            if position in coins:
             coins.remove((position))
 
